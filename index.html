@@ -10,12 +10,13 @@
             
             #list { color:black;}
             #texto { color:rgb(196, 19, 196); font-family:cursive; font-size:22px}
-           #tabla {color:black; font-size:25px; background:rgb(231, 223, 240); width:99%;border: 3px solid rgb(239, 184, 16);}
+           thead.tabla {color:black; font-size:25px; background:rgb(231, 223, 240); width:99%;border: 3px solid rgb(239, 184, 16);}
            #rose { position: fixed;left: 1050px;}
             #logo { position: fixed;left: 1090px; top: 40px; color:white; font-family: cursive}
             #htmlimg { width="200"; float: left; margin: 8px}
             #ejemplo {posicion: down}
             #referlinks { float: right; width: 30%; margin-left: 10px; color:blue}
+            a:hover {background:rgb(196, 19, 196)}
             
             #cursive {font-family:cursive;}
             #sans-serif {font-family:sans-serif;}
@@ -26,8 +27,12 @@
             #Times-New-Roman {font-family: Georgia, Cambria, Times;}
             #Arial {font-family:Arial;}
             
-            #final {color:white; font-family:cursive; font-size:30px}
+            .advertencias {border-top: 1px solid rgb(0, 0, 0); border-bottom: 1px solid rgb(0, 0, 0); padding-top: 2px; padding-bottom: 2px; color:red}
+            .resaltar {color:blue;}
+            .white {color:white; font-family:cursive; font-size:30px}
         </style>
+        
+        
     </head>
     <body>
         <div id="referlinks"><h3>Referencias/links usados en la creacion de esta pagina</h3>
@@ -56,32 +61,38 @@
             <li><a href="#css">Primeroas pasos CSS</a></li>
             <li><a href="#vinculos">Vinculos</a></li>
             <li><a href="#estilos">Estilos y Fuentes</a></li>
+            <li><a href="#posicion">Posición de Texto o Imagenes personalizado</a></li>
+            <li><a href="#agrupacion">Agrupación o simplificado de codigo fuente</a></li>
+            
         </ul>
+        <p class="advertencias">Todo lo visto en el blog son solo mis puntos de vista, esto quiere decir que, no son todas las posibilidades en HTML hay muchas posibilidades aplicables, yo solo describo las mas divertidas y las que me gusten mas.</p>
         
         <h2 id="html">Primeros pasos HTML</h2>
-        <h6>Cuando empece con HTML, No entendia nada.</h6>
-        <p><img id="htmlimg" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png"> Gracias al curso/tutorial el cual estoy completando he aprendido lo basico sobre el HTML, ya se insertar texto, hacer listas, colocar titulos, etc...<br>También he aprendido, que en todo momento se usaran los simbolos (>) mayor que y (&lt;) menor que, son gran parte de la programacion del mismo, y es facil empezar a entender HTML teniendo claro eso.</p> 
+        <h6>Cuando empece con <a class="resaltar">HTML</a>, No entendia nada.</h6>
+        <p><img id="htmlimg" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png"> Gracias al curso/tutorial el cual estoy completando he aprendido lo basico sobre el HTML, ya se insertar texto, hacer listas, colocar titulos, etc...<br>También he aprendido que en todo momento su usaran los simbolos <a class="resaltar">(>)</a> mayor que y <a class="resaltar">(&lt;)</a> menor que, son gran parte de la programacion del mismo, y es facil empezar a entender HTML teniendo claro eso.</p> 
         <img id="ejemplo"  src="https://upload.wikimedia.org/wikipedia/commons/4/49/Captura_inspector_de_p%C3%A1gina_en_Firefox.png" width="600">
                 
         <h2 id="css">Primeros pasos CSS</h2>
         <h6>Desde que entendi el HTML quise darle color a mis paginas. </h6>
         
-        <p>Gracias al curso/tutorial que estoy completando he aprendido lo basico sobre el CSS, me gusta mucho porque hay etiquetas muy utiles como las clases o id, ayudan a dividir la pagina en distintas secciones y no obligan al usuario a por ejemplo aplicar el mismo color a todas las letras de la pagina,<span id="texto"> gracias a estas herramientas podemos dividir algunos textos o resaltarlos como por ejemplo este mismo.</span> </p> <img src="https://tecnoinformatic.com/wp-content/uploads/2020/06/2z4a3yh4.jpg" width="600">
+        <p>Gracias al curso/tutorial que estoy completando he aprendido lo basico sobre el <a class="resaltar">CSS</a>, me gusta mucho porque hay etiquetas muy utiles como <a class="resaltar">class</a> o <a class="resaltar">id</a>, ayudan a dividir la pagina en distintas secciones y no obligan al usuario a por ejemplo aplicar el mismo color a todas las letras de la pagina,<span id="texto"> gracias a estas herramientas podemos dividir algunos textos o resaltarlos como por ejemplo este mismo.</span> </p> <img src="https://tecnoinformatic.com/wp-content/uploads/2020/06/2z4a3yh4.jpg" width="600">
         
                 
         <h2 id="vinculos">Vinculos</h2>
         <h6>Siempre he considerado que lo mas importante de una pagina es poder navegar entre otras paginas similares o con realación.</h6>
         
-        <p>En todas las paginas que navegamos dia a dia encontramos vinculos, y facilita mucho la navegación y comunicación con la pagina no podria imaginarme una pagina sin vinculos, por lo tanto cuando aprendi sobre lo mismo me gusto mucho y lo aprovechare en futuros proyectos.<br>Un ejemplo seria preciona <a href="#inicio">Aquí</a> para ir al inicio de la pagina.</p>
+        <p>En todas las paginas que navegamos dia a dia encontramos vinculos, y facilita mucho la navegación y comunicación con la pagina no podria imaginarme una pagina sin vinculos, por lo tanto cuando aprendi sobre lo mismo me gusto mucho y lo aprovechare en futuros proyectos. El comando que usamos para ello es <a class="resaltar">&lt;a href="Vinculo">NombreEnPagina&lt;/a></a>.
+        
+        <br>Un ejemplo seria preciona <a href="#inicio">Aquí</a> para ir al inicio de la pagina.</p>
         
                 
         <h2 id="estilos">Estilos y Fuentes</h2>
-        <h6>Los estilos, fuentes y tamaño de letra ayudan mucho a mejorar y entender la pagina en la que se ingresa</h6>
+        <h6>Los estilos, fuentes y tamaño de letra ayudan mucho a mejorar y entender la pagina en la que se ingresa...</h6>
         
-        <p>Los estilos y fuentes son una buena forma de personalizar tu pagina a tu gusto, ya que si todas las paginas fueran igual seria un poco aburrido navegar por internet. También se usa mucho para hacer la pagina mas intuitiba y resaltar las partes que concideremos importantes.</p><p>Hay muchos estilos y/o fuentes de letras a continuación presentare una lista con algunos de ellos su respectiva codigo y estilo</p>
+        <p>Los estilos y fuentes son una buena forma de personalizar tu pagina a tu gusto, ya que si todas las paginas fueran igual seria un poco aburrido navegar por internet. También se usa mucho para hacer la pagina mas intuitiba y resaltar las partes que concideremos importantes. la etiqueda </p><p>Hay muchos estilos y/o fuentes de letras a continuación presentare una lista con algunos de ellos su respectiva codigo y estilo</p>
         
-              <div id="tabla2"> <table id="tabla">
-            <thead>
+             <table>
+            <thead class="tabla">
                 <tr>
                     <th>Como se ve</th>
                     <th>Codigo</th>
@@ -97,9 +108,17 @@
             </thead>
             <tbody>
             </tbody>
-        </table> </div>
+        </table>
+        <h2 id="posicion">Posición de Texto o Imagenes personalizado</h2>
+        <h6>Siempre habia queria colocarle un logo al blog ya lo logre gracias a la etiqueda posicion, float, margin y algunas otras lo he logrado...</h6>
+        <p>En muchas paginas vemos que hay <a class="resaltar">"ventanas"</a> que por mas que hagas scroll esas ventanas seguiran estando normalmente a los lados de la pagina, bueno estas ventanas se consiguen usando principalmente los comando <a class="resaltar">float</a> y <a class="resaltar">posicion</a>, si los combinamos con otras etiquedas puede quedar muy lindo y le da un estilo unico a la pagina, tambien se puede usar de formar intuitiba para señalar algo importante. Un ejemplo de este mismo es la rosa con el nombre del blog que vemos en el blog sin importar caunto scroll hagas.</p>
         
-       <p id="final">Agradecimiento a <a href="https://es.khanacademy.org/">KhanAcademy</a> por esta oportunidad, para aprender y tener conicimientos de la programación y diseño de paginas</p>
+        <h2 id="agrupacion">Agrupación o simplificado de codigo fuente</h2>
+        <h6>A veces los codigos se hacen muy complejos y quizas poco intutivos<h6>
+        <p>Aplicando o sabiendo que existen estos comandos se puede simplificar mucho el codigo de una pagina. En la agrupacion o simplificado de codigo tambien podemos agregar la herencia que es como lo dice el nombre la herencia que le deja la primera linea de codigo o la etiqueda mas importante a las siguiente, si tenemos esto en cuenta junto a las etiquedas div o a; podemos agrupar exactamente en lo que querramos todos los textos que nos vengan a la mente</p>
+        
+        
+       <p class="white">Agradecimiento a <a href="https://es.khanacademy.org/">KhanAcademy</a> por esta oportunidad, para aprender y tener conicimientos de la programación y diseño de paginas</p>
         
         
     </body>
